@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <h1>Customer Order Form</h1>
+            <section>
+                <h2 class="section-title">Billing Information</h2>
+                <div class="flex">
+                    <div class="form-control">
+                        <label for="">First Name</label>
+                        <input type="text" placeholder="First Name" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="">Middle Name</label>
+                        <input type="text" placeholder="Middle Name" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="">Last Name</label>
+                        <input type="text" placeholder="Last Name" required>
+                    </div>
+                </div>
+
+                <div class="form-control address">
+                    <label for="">Address</label>
+                    <input type="text" required>
+                </div>
+                <div class="flex">
+                    <div class="form-control">
+                        <label for="">City</label>
+                        <input type="text" placeholder="City" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="">State</label>
+                        <input type="text" placeholder="State" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="">ZIP code</label>
+                        <input type="number" placeholder="ZIP code" required>
+                    </div>
+                </div>
+                <input type="checkbox" id="check" required> <label for="check" class="check">check if the billing address is the
+                    same as shipping address</label>
+            </section>
+            <section>
+                <h2 class="section-title">Shipping Information</h2>
+                <div class="flex">
+                    <div class="form-control">
+                        <label for="">First Name</label>
+                        <input type="text" placeholder="First Name" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="">Middle Name</label>
+                        <input type="text" placeholder="Middle Name" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="">Last Name</label>
+                        <input type="text" placeholder="Last Name" required>
+                    </div>
+                </div>
+
+                <div class="form-control address">
+                    <label for="">Address</label>
+                    <input type="text" required>
+                </div>
+                <div class="flex">
+                    <div class="form-control">
+                        <label for="">City</label>
+                        <input type="text" placeholder="City" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="">State</label>
+                        <input type="text" placeholder="State" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="">ZIP code</label>
+                        <input type="number" placeholder="ZIP code" required>
+                    </div>
+                </div>
+            </section>
+
+
+            <section>
+                <h2 class="section-title">Parts Information</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Part name</th>
+                            <th>Description</th>
+                            <th>Unit Price</th>
+                            <th>Quantity ($)</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">90 degree elbow</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" required>
+                            </td>
+                            <td>
+                                <input type="text" readonly value="9" required>
+                            </td>
+                            <td>
+                                <input type="number" value="1" required>
+                            </td>
+                            <td>
+                                9.00$
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">PVC Pipe</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" required>
+                            </td>
+                            <td>
+                                <input type="text" readonly value="14" required>
+                            </td>
+                            <td>
+                                <input type="number" value="2" required>
+                            </td>
+                            <td>
+                                28.00$
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">L Brackets</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" required>
+                            </td>
+                            <td>
+                                <input type="text" readonly value="6.50" required>
+                            </td>
+                            <td>
+                                <input type="number" value="3" required>
+                            </td>
+                            <td>
+                                19.50$
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="add" style="text-align: left;">
+                                <button class="btn add" type="button">Add</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style="text-align: left;">
+                                <strong>Sum Total</strong>
+                            </td>
+                            <td>
+                                56.50$
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style="text-align: left;">
+                                <strong>Total Tax (9.25%)</strong>
+                            </td>
+                            <td>
+                                5.23$
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style="text-align: left;">
+                                <strong>Total</strong>
+                            </td>
+                            <td>
+                                61.73$
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="payment-information">
+                <h2 class="section-title">Payment Information</h2>
+                <div class="form-control pay">
+                    <input type="radio" name="payment" id="credit" required> <label for="credit" class="payment">Credit
+                        Card</label>
+                </div>
+                <div class="flex">
+                    <div class="form-control">
+                        <label for="">Credict Card</label>
+                        <input type="text" placeholder="XXXX XXXX XXXX XXXX" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="">Exp Date</label>
+                        <input type="text" placeholder="MM/YY" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="">Security Code</label>
+                        <input type="text" placeholder="XXX" required>
+                    </div>
+                </div>
+                <div class="form-control pay">
+                    <input type="radio" name="payment" id="paypal" required> <label for="paypal" class="payment">PayPal</label>
+                </div>
+            </section>
+
+            <div class="btns">
+                <button type="reset" class="btn reset">Clear Fields</button>
+                <button type="submit" class="btn submit">PAY NOW</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
